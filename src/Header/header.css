@@ -1,0 +1,19 @@
+header{
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+header .container{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a{
+    margin-left:2rem;
+}
+
+.homebutton{
+    display: block;
+}
