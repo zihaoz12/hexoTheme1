@@ -1,14 +1,12 @@
 import React from 'react';
 
 const PostsList = (props) =>{
-
     let post = props.post
-    console.log(post.id)
     return(
         <div>
             <article className="entry-items">
                 <div className="post-thumb" style={{backgroundImage:`url(${post.url})`}}>
-                    <a href="#">
+                    <a href="#/">
                         <h3 className="item-name">{post.title}</h3>
                         <div className="item-desc">
                             <p>{post.description}</p>

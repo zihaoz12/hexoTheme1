@@ -8,7 +8,7 @@ const Footer =()=>{
                 <div className="container">
                     <div className="row">
                         <p>©Copyright 2019 by
-                            <a href="#">
+                            <a href="#/">
                                 Hello world
                             </a>
                         </p>
