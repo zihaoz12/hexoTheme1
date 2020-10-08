@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import "./main.css";
+import "./main.scss";
 import PostsList from './PostsLists/index';
 
 
