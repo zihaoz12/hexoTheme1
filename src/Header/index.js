@@ -1,18 +1,18 @@
 import React from 'react';
 import "./header.scss";
 
-
+import {Link} from 'react-router-dom';
 
 const Header = ()=>{
     return(
         <div>
             <header>
                 <div className="container">
-                    <a className="homebutton" href="#/"><span><i className="fas fa-home"></i></span></a>
+                    <a className="homebutton" ><span><Link to="/"><i className="fas fa-home"></i></Link></span></a>
                     <nav>
-                        <a href="#/"><span><i className="fas fa-user-alt"></i></span></a>
-                        <a href="#/"><span><i className="fas fa-address-book"></i></span></a>
-                        <a href="#/"><span><i className="fas fa-ban"></i></span></a>
+                        <a><span><Link to="/login"><i className="fas fa-user-alt"></i></Link></span></a>
+                        <a><span><Link to='/profile'><i className="fas fa-address-book"></i></Link></span></a>
+                        <a><span><Link to="/about"><i className="fas fa-ban"></i></Link></span></a>
                     </nav>
                 </div>
             </header>
