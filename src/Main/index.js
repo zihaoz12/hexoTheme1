@@ -1,29 +1,27 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import "./main.scss";
 import PostsList from './PostsLists/index';
 
 
+
 const Main =()=>{
-    const[posts,setPosts] = useState([
-        {
-            id:0,
-            title:'Img 1',
-            url:'https://images.unsplash.com/photo-1557167045-84a590d5ca22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1685&q=80',
-            description:'descripteaasdasdasdasdasdasdadzxc',
-        },
-        {
-            id:1,
-            title:'Img 2',
-            url:'https://images.unsplash.com/photo-1557167045-84a590d5ca22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1685&q=80',
-            description:'descripteaasxczcdasdasdasdasdasdadzxc',
-        },
-        {
-            id:2,
-            title:'Img 3',
-            url:'https://images.unsplash.com/photo-1557167045-84a590d5ca22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1685&q=80',
-            description:'descrsadasdsadsafipteaasdasdasdasdasdasdadzxc',
-        },
-    ])
+    const[posts,setPosts] = useState([])
+
+    const getPosts = async()=>{
+        fetch('/posts.json').then(res => {
+            console.log('res:',res);
+            return res.json();
+        }).then( data =>{
+            console.log('data:',data);
+            setPosts(data)
+        }).catch( err =>{
+            console.log('err:',err)
+        })
+    }
+
+    useEffect(()=>{
+        getPosts()
+    },[])
 
     return(
         <div>

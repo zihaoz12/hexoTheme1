@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const PostsList = (props) =>{
     let post = props.post
     return(
