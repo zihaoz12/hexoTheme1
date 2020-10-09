@@ -4,14 +4,14 @@ const About =()=>{
     return (
         <div className="container">
             <div className="go-back">
-                <a href="/posts">Go Back</a>
+                <a href="/">Go Back</a>
             </div>
 
-	        <div class="about-container">
+	        <div className="about-container">
                 <h1>About</h1>
 
                 <div>
-                    <iframe width="860" height="515" src="https://www.youtube.com/embed/h_ayZ-xcMd4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe title="about" width="860" height="515" src="https://www.youtube.com/embed/h_ayZ-xcMd4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
 
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

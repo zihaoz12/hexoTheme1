@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PostsList = (props) =>{
     let post = props.post
@@ -6,12 +7,14 @@ const PostsList = (props) =>{
         <div>
             <article className="entry-items">
                 <div className="post-thumb" style={{backgroundImage:`url(${post.url})`}}>
-                    <a href="#/">
+                    
+                    <Link to={`posts/${post.id}`}>
                         <h3 className="item-name">{post.title}</h3>
                         <div className="item-desc">
                             <p>{post.description}</p>
                         </div>
-                    </a>
+                    </Link>
+                    
                 </div>
             </article>
         </div>

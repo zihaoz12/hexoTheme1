@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Post = ()=>{
+const Post = (match)=>{
+    console.log(match.match.url);
+    
     return(
-        <div>
-            Post
+        <div className="container">
+            <h1>Post</h1>
         </div>
     )
 }
