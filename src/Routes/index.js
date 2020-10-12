@@ -5,6 +5,7 @@ import About from '../Main/About/index';
 import Login from '../Main/Login/index';
 import Profile from '../Main/Profile/index';
 import Post from '../Main/Components/Post';
+import NewPost from '../Main/Components/NewPost';
 
 const Routes =()=>{
     return(
@@ -14,6 +15,7 @@ const Routes =()=>{
             <Route  path="/login" component={Login}/>
             <Route  path="/profile" component={Profile}/>
             <Route  path="/posts/:id" component={Post}/>
+            <Route  path="/newpost"  component={NewPost}/>
         </Switch>
     )
 }

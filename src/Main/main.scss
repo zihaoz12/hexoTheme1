@@ -80,3 +80,49 @@ main{
     border-radius: 30%;
     color:#444;
 }
+
+.homebutton{
+    display: block;
+}
+
+
+
+.entry-header .to-posts{
+    display: inline-block;
+    border-radius: 25px;
+    margin-top:15px;
+    padding: 15px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+}
+
+.to-posts:hover{
+    color: #fff;
+    background: #222;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+#createPost{
+    font-size:16px;
+    padding: 8px 25px;
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#createPost:hover{
+    color: white;
+    text-decoration: none;
+    transition: ease-in-out all 0.3s;
+    background: #ea6f5a;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
